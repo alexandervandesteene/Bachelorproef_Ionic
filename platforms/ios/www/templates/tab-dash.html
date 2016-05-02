@@ -1,0 +1,15 @@
+<ion-view view-title="Users">
+  <ion-nav-buttons side="secondary">
+    <button class="button icon-right ion-android-person-add icon-right" ng-click="add()"></button>
+  </ion-nav-buttons>
+  <ion-content class="padding">
+    <ion-list>
+      <ion-item class="item-avatar item-icon-right" ng-repeat="user in users" type="item-text-wrap" href="#/tab/dash/{{user.id}}">
+        <img ng-src="img/person.png">
+        <h2>{{user.first_name}} {{user.last_name}}</h2>
+        <p>{{user.email}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
